@@ -1,36 +1,77 @@
-body{
-    background-image: linear-gradient(180deg, rgb(234, 235, 226), rgb(122 128 135));
+body {
+    background: linear-gradient(180deg, #ecefe1, #7a8087);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
-.zahlaviBaner{
+
+.zahlaviBaner {
     text-align: center;
     padding: 50px;
-    background-image: url(BanerPozadi.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    margin: -10px;
+    background: url('BanerPozadi.jpg') no-repeat center/cover;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    position: relative;
 }
-.zahlaviTlacitka{
-    padding: 5px;
-    margin: 2.5%;
-    font-size: 40;
-    color: black;
-    background-color: rgb(107 107 107);
-    border: 5px rgb(51 51 51);
-    border-style: solid;
+
+.zahlaviBaner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* Polopriehľadná vrstva pre lepšiu čitateľnosť */
 }
-.nadpis{
+
+.zahlaviTlacitka {
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background: #6b6b6b;
+    border: 3px solid #333;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.zahlaviTlacitka:hover {
+    background: #444;
+    color: #ddd;
+    transform: scale(1.05);
+}
+
+.nadpis {
     margin-top: 60px;
     font-size: 50px;
     font-weight: 900;
     text-align: center;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
-.textBox{
+
+.textBox {
     text-align: center;
-    padding-left: 20%;
+    padding: 20px;
+    max-width: 80%;
+    margin: auto;
 }
-.text{
+
+.text {
     font-size: 25px;
     padding: 30px;
-    font-weight: 400;text-align: left;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.6;
+    color: #333;
+}
+
+.textBox .text {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+html {
+    scroll-behavior: smooth;
 }
