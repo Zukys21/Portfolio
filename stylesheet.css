@@ -1,0 +1,36 @@
+body{
+    background-image: linear-gradient(180deg, rgb(234, 235, 226), rgb(122 128 135));
+}
+.zahlaviBaner{
+    text-align: center;
+    padding: 50px;
+    background-image: url(BanerPozadi.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin: -10px;
+}
+.zahlaviTlacitka{
+    padding: 5px;
+    margin: 2.5%;
+    font-size: 40;
+    color: black;
+    background-color: rgb(107 107 107);
+    border: 5px rgb(51 51 51);
+    border-style: solid;
+}
+.nadpis{
+    margin-top: 60px;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+.textBox{
+    text-align: center;
+    padding-left: 20%;
+}
+.text{
+    font-size: 25px;
+    padding: 30px;
+    font-weight: 400;text-align: left;
+}
